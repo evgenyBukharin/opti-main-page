@@ -1,0 +1,23 @@
+.service {
+	background: var(--grey-color);
+	padding-top: 12px;
+	padding-bottom: 12px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+	&__text {
+		color: var(--white-color);
+		font-size: 14px;
+		text-decoration: none;
+	}
+	&__icon {
+		margin-right: 9px;
+	}
+}

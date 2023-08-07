@@ -5,9 +5,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 10px;
 	}
 	&__link {
-		color: var(--black-color);
+		color: var(--real-black-color);
 		font-size: 18px;
 		font-weight: 500;
 		text-decoration: none;
@@ -17,6 +18,40 @@
 	&__icon {
 		&-tel {
 			margin-right: 10px;
+		}
+	}
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+	&__button {
+		&-text {
+			padding: 9px 16px;
+			border-radius: 5px;
+			background: var(--blue-color);
+			color: var(--white-color);
+			font-size: 14px;
+			font-weight: 500;
+		}
+		&-icon {
+			min-height: 35px;
+			height: 35px;
+			min-width: 35px;
+			width: 35px;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&-tg {
+				background: var(--light-blue-color);
+			}
+			&-whatsapp {
+				background: var(--green-color);
+			}
+			&-user {
+				background: var(--dark-blue-color);
+			}
 		}
 	}
 }
