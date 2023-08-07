@@ -1,4 +1,133 @@
 .hero {
+	padding-top: 27px;
 	&__container {
+		&-text {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			margin-bottom: 80px;
+		}
+		&-navigation {
+			position: absolute;
+			bottom: 50px;
+			left: 50px;
+			z-index: 970;
+		}
+	}
+	&__slider {
+		position: relative;
+	}
+	&__slide {
+		box-sizing: border-box;
+		padding: 50px;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-between;
+		max-height: 500px; /* вообще не оч идея - на адаптиве убрать надо будет */
+		&-first {
+			background: linear-gradient(134deg, var(--dark-blue-color) 19.3%, rgba(20, 38, 71, 0.73) 100%);
+		}
+		&-second {
+			background: linear-gradient(180deg, #142647 31.45%, #1f3c70 100%);
+			& .hero {
+				&__container {
+					&-text {
+						margin-bottom: 100px;
+					}
+				}
+				&__subtitle {
+					margin-bottom: 26px;
+				}
+			}
+		}
+		&-third {
+			background: linear-gradient(92deg, var(--dark-blue-color) 33.35%, var(--title-color) 100%);
+			& .hero {
+				&__text {
+					&-alone {
+						max-width: 522px;
+						font-size: 14px;
+						line-height: 105.461%;
+					}
+				}
+				&__subtitle {
+					margin-bottom: 26px;
+				}
+			}
+		}
+		&-fourth {
+			background: linear-gradient(132deg, var(--dark-blue-color) 0%, #142647 60.87%);
+			& .hero {
+				&__container {
+					&-text {
+						margin-bottom: 95px;
+					}
+				}
+				&__text {
+					&-alone {
+						max-width: 455px;
+						font-size: 14px;
+						line-height: 105.461%;
+					}
+				}
+				&__subtitle {
+					margin-bottom: 34px;
+				}
+			}
+		}
+	}
+	&__title {
+		color: var(--title-color);
+		font-size: 62px;
+		font-weight: 600;
+	}
+	&__subtitle {
+		color: var(--white-color);
+		font-size: 48px;
+		line-height: 48px;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		max-width: 430px;
+	}
+	&__text {
+		color: var(--white-color);
+		font-size: 14px;
+		max-width: 263px;
+		line-height: 100%;
+		&-alone {
+			max-width: 386px;
+			font-size: 18px;
+			line-height: 105.461%;
+		}
+	}
+	&__button {
+		padding: 10px 20px;
+		color: var(--white-color);
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 18px;
+		border-radius: 8px;
+		margin-bottom: 100px;
+		&-primary {
+			background: var(--title-color);
+		}
+		&-secondary {
+			background: var(--secondary-button-color);
+		}
+		&-thirdly {
+			background: var(--thirdly-button-color);
+		}
+		&-fourthly {
+			background: var(--dark-blue-color);
+		}
+		&-next {
+			margin-left: 40px;
+		}
+	}
+	&__icon {
+		&-next {
+			transform: rotate(180deg);
+		}
 	}
 }
