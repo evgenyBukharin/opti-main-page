@@ -2,7 +2,7 @@
 	// base
 	--font-family: "Golos Text", sans-serif;
 	--content-width: 1200px;
-	--container-offset: 20px;
+	--container-offset: 50px;
 	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
 	// colors
@@ -17,4 +17,10 @@
 	--title-color: #0bbbef;
 	--secondary-button-color: #005893;
 	--thirdly-button-color: #3298dc;
+}
+
+@media (max-width: 940px) {
+	:root {
+		--container-offset: 24px;
+	}
 }

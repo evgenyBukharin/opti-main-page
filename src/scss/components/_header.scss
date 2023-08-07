@@ -33,6 +33,7 @@
 			color: var(--white-color);
 			font-size: 14px;
 			font-weight: 500;
+			min-height: 35px;
 		}
 		&-icon {
 			min-height: 35px;
@@ -51,6 +52,115 @@
 			}
 			&-user {
 				background: var(--dark-blue-color);
+			}
+		}
+	}
+	&__burger {
+		display: none;
+	}
+}
+
+@media (max-width: 1260px) {
+	.header {
+		&__link {
+			font-size: 14px;
+		}
+		&__button {
+			&-text {
+				padding: 8px 16px;
+				font-size: 12px;
+				min-height: 30px;
+			}
+			&-icon {
+				min-height: 30px;
+				height: 30px;
+				min-width: 30px;
+				width: 30px;
+			}
+		}
+		&__logo {
+			width: 58px;
+			height: 40px;
+		}
+		&__icon {
+			&-tg {
+				width: 21px;
+				height: 18px;
+			}
+			&-whatsapp {
+				width: 18px;
+				height: 19px;
+			}
+			&-user {
+				width: 19px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 940px) {
+	.header {
+		&__burger {
+			display: inline-block;
+		}
+		&__button {
+			&-icon {
+				min-height: 40px;
+				height: 40px;
+				min-width: 40px;
+				width: 40px;
+				&-user {
+					display: none;
+				}
+			}
+		}
+		&__logo {
+			width: 73px;
+			height: 50px;
+		}
+		&__icon {
+			&-tg {
+				width: 28px;
+				height: 24px;
+			}
+			&-whatsapp {
+				width: 24px;
+				height: 25px;
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.header {
+		&__button {
+			&-icon {
+				min-height: 40px;
+				height: 40px;
+				min-width: 40px;
+				width: 40px;
+				&-tg {
+					display: none;
+				}
+				&-whatsapp {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		&__container {
+			&-tel {
+				display: none;
+			}
+		}
+		&__button {
+			&-text {
+				display: none;
 			}
 		}
 	}

@@ -11,8 +11,8 @@ const heroSlider = new Swiper(swiperEl, {
 		prevEl: ".hero__button-prev",
 		nextEl: ".hero__button-next",
 	},
-	autoplay: {
-		delay: 5000,
-		pauseOnMouseEnter: true,
-	},
+	// autoplay: {
+	// 	delay: 5000,
+	// 	pauseOnMouseEnter: true,
+	// },
 });

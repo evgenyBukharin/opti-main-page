@@ -20,8 +20,15 @@
 	&__text {
 		color: var(--white-color);
 		font-size: 14px;
+		text-align: center;
 	}
 	&__icon {
 		margin-right: 9px;
+	}
+}
+
+@media (max-width: 768px) {
+	.navigation {
+		display: none;
 	}
 }
