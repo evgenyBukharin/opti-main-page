@@ -198,8 +198,12 @@
 
 @media (max-width: 768px) {
 	.hero {
+		padding-top: 25px;
 		&__subtitle {
 			max-width: unset;
+		}
+		&__title {
+			font-size: 48px;
 		}
 		&__image {
 			max-height: 220px;
@@ -216,6 +220,9 @@
 
 @media (max-width: 640px) {
 	.hero {
+		&__container-text {
+			margin-bottom: 60px;
+		}
 		&__subtitle {
 			font-size: 34px;
 		}
@@ -255,6 +262,86 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		padding-top: 20px;
+		&__image {
+			width: 100%;
+			max-height: 205px;
+			position: relative;
+			bottom: unset;
+			right: unset;
+		}
+		&__container {
+			&-text {
+				margin-bottom: 30px;
+			}
+		}
+		&__button {
+			margin-bottom: 0;
+			position: absolute;
+			bottom: 26px;
+			right: 30px;
+		}
+		&__slide {
+			flex-direction: column;
+			justify-content: unset;
+			padding-bottom: 80px;
+			&-second {
+				.hero {
+					&__container {
+						&-text {
+							margin-bottom: 30px;
+						}
+					}
+				}
+			}
+			&-fourth {
+				.hero {
+					&__container {
+						&-text {
+							margin-bottom: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 454px) {
+	.hero {
+		&__subtitle {
+			font-size: 28px;
+			line-height: 100%;
+		}
+		&__title {
+			font-size: 48px;
+		}
+		&__text {
+			font-size: 10px !important;
+		}
+		&__slide {
+			padding: 20px;
+			padding-bottom: 80px;
+		}
+	}
+}
+
+@media (max-width: 385px) {
+	.hero {
+		&__subtitle {
+			font-size: 21px;
+		}
+		&__title {
+			font-size: 32px;
+		}
+		&__text {
+			font-size: 8px !important;
 		}
 	}
 }

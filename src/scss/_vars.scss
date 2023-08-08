@@ -24,3 +24,9 @@
 		--container-offset: 24px;
 	}
 }
+
+@media (max-width: 940px) {
+	:root {
+		--container-offset: 20px;
+	}
+}
