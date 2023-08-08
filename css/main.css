@@ -818,20 +818,6 @@ p {
   width: -moz-fit-content;
   width: fit-content
 }
-.service__text:hover::after {
-  width: 100%
-}
-.service__text:after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--service-title-color);
-  -webkit-transition: width .4s;
-  transition: width .4s
-}
 .service__text-main {
   margin-bottom: 10px
 }
