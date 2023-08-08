@@ -116,21 +116,6 @@
 		text-decoration: none;
 		position: relative;
 		width: fit-content;
-		&:hover {
-			&::after {
-				width: 100%;
-			}
-		}
-		&:after {
-			content: "";
-			position: absolute;
-			bottom: -2px;
-			left: 0;
-			width: 0;
-			height: 1px;
-			background: var(--service-title-color);
-			transition: width 0.4s ease;
-		}
 		&-main {
 			margin-bottom: 10px;
 		}
