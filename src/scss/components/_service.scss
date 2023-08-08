@@ -47,8 +47,7 @@
 	&__item {
 		padding: 20px 7px 13px 20px;
 		border-radius: 10px;
-		background: crimson;
-		// background: var(--item-bg-color);
+		background: var(--item-bg-color);
 		box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.05);
 		&-main {
 			grid-column: 3 span;
