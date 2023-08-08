@@ -20,14 +20,7 @@
 			<header class="header">
 	<div class="container header__container">
 		<a href="/" class="header__link-logo">
-			<img
-				loading="lazy"
-				src="./img/logo.svg"
-				class="image header__logo"
-				width="79"
-				height="55"
-				alt="логотип компании"
-			/>
+			<img src="./img/logo.svg" class="image header__logo" width="79" height="55" alt="логотип компании" />
 		</a>
 		<nav class="nav" title="Навигационная панель">
 			<ul class="nav__list list-reset">
@@ -41,7 +34,6 @@
 			<div class="header__container-tel">
 				<a href="tel:88002016216" class="header__link">
 					<img
-						loading="lazy"
 						src="./img/phone.svg"
 						class="image header__icon-tel"
 						width="15"
@@ -53,18 +45,10 @@
 			</div>
 			<button class="btn-reset header__button-text">Заказать звонок</button>
 			<a href="#" class="btn-reset header__button-icon header__button-icon-tg">
-				<img
-					loading="lazy"
-					src="./img/tg.svg"
-					class="image header__icon-tg"
-					width="26"
-					height="21"
-					alt="Иконка telegramm"
-				/>
+				<img src="./img/tg.svg" class="image header__icon-tg" width="26" height="21" alt="Иконка telegramm" />
 			</a>
 			<a href="#" class="btn-reset header__button-icon header__button-icon-whatsapp">
 				<img
-					loading="lazy"
 					src="./img/whatsapp.svg"
 					class="image header__icon-whatsapp"
 					width="21"
@@ -74,7 +58,6 @@
 			</a>
 			<a href="#" class="btn-reset header__button-icon header__button-icon-user">
 				<img
-					loading="lazy"
 					src="./img/user.svg"
 					class="image header__icon-user"
 					width="25"
@@ -82,76 +65,80 @@
 					alt="Иконка пользователя"
 				/>
 			</a>
+			<button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+				<span class="burger__line"></span>
+			</button>
 		</div>
 	</div>
 </header>
 
-			<main class="main"><section class="service">
-	<div class="container service__container">
-		<ul class="list-reset service__list">
-			<li class="service__item">
-				<a href="#" class="service__link">
+			<main class="main">
+				<section class="navigation">
+	<div class="container navigation__container">
+		<ul class="list-reset navigation__list">
+			<li class="navigation__item">
+				<a href="#" class="navigation__link">
 					<img
 						loading="lazy"
 						src="./img/bitrix.svg"
-						class="image service__icon service__icon-bitrix"
+						class="image navigation__icon navigation__icon-bitrix"
 						width="46"
 						height="25"
 						alt="Иконка битрикс"
 					/>
-					<span class="service__text">Битрикс 24</span>
+					<span class="navigation__text">Битрикс 24</span>
 				</a>
 			</li>
-			<li class="service__item">
-				<a href="#" class="service__link">
+			<li class="navigation__item">
+				<a href="#" class="navigation__link">
 					<img
 						loading="lazy"
 						src="./img/robot.svg"
-						class="image service__icon service__icon-robot"
+						class="image navigation__icon navigation__icon-robot"
 						width="34"
 						height="35"
 						alt="Иконка автоматизации"
 					/>
-					<span class="service__text">Автоматизация бизнес-процессов</span>
+					<span class="navigation__text">Автоматизация бизнес-процессов</span>
 				</a>
 			</li>
-			<li class="service__item">
-				<a href="#" class="service__link">
+			<li class="navigation__item">
+				<a href="#" class="navigation__link">
 					<img
 						loading="lazy"
 						src="./img/web.svg"
-						class="image service__icon service__icon-web"
+						class="image navigation__icon navigation__icon-web"
 						width="36"
 						height="33"
 						alt="Иконка web-разработка"
 					/>
-					<span class="service__text">WEB – разработка</span>
+					<span class="navigation__text">WEB – разработка</span>
 				</a>
 			</li>
-			<li class="service__item">
-				<a href="#" class="service__link">
+			<li class="navigation__item">
+				<a href="#" class="navigation__link">
 					<img
 						loading="lazy"
 						src="./img/keyboard.svg"
-						class="image service__icon service__icon-keyboard"
+						class="image navigation__icon navigation__icon-keyboard"
 						width="49"
 						height="25"
 						alt="Иконка техподдержки"
 					/>
-					<span class="service__text">Техническая поддержка</span>
+					<span class="navigation__text">Техническая поддержка</span>
 				</a>
 			</li>
-			<li class="service__item">
-				<a href="#" class="service__link">
+			<li class="navigation__item">
+				<a href="#" class="navigation__link">
 					<img
 						loading="lazy"
 						src="./img/screen.svg"
-						class="image service__icon service__icon-screen"
+						class="image navigation__icon navigation__icon-screen"
 						width="36"
 						height="33"
 						alt="Иконка аналитики"
 					/>
-					<span class="service__text">Сквозная аналитика</span>
+					<span class="navigation__text">Сквозная аналитика</span>
 				</a>
 			</li>
 		</ul>
@@ -175,11 +162,33 @@
 					<img
 						loading="lazy"
 						src="./img/slide-image-1.svg"
-						class="image hero__image-slide-1"
+						class="image hero__image hero__image-slide-1"
 						width="486"
 						height="402"
 						alt="Изображние слайда"
 					/>
+					<div class="hero__container-navigation">
+						<button class="btn-reset hero__button-prev">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-arrow"
+								width="14"
+								height="25"
+								alt="Стрелка назад"
+							/>
+						</button>
+						<button class="btn-reset hero__button-next">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-next"
+								width="14"
+								height="25"
+								alt="Стрелка вперед"
+							/>
+						</button>
+					</div>
 				</div>
 				<div class="swiper-slide hero__slide hero__slide-second">
 					<div class="hero__container-side">
@@ -194,18 +203,40 @@
 					<img
 						loading="lazy"
 						src="./img/slide-image-2.svg"
-						class="image hero__image-slide-2"
+						class="image hero__image hero__image-slide-2"
 						width="396"
 						height="400"
 						alt="Изображние слайда"
 					/>
+					<div class="hero__container-navigation">
+						<button class="btn-reset hero__button-prev">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-arrow"
+								width="14"
+								height="25"
+								alt="Стрелка назад"
+							/>
+						</button>
+						<button class="btn-reset hero__button-next">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-next"
+								width="14"
+								height="25"
+								alt="Стрелка вперед"
+							/>
+						</button>
+					</div>
 				</div>
 				<div class="swiper-slide hero__slide hero__slide-third">
 					<div class="hero__container-side">
 						<h3 class="hero__subtitle">Внедрение Битрикс24</h3>
 						<div class="hero__container-text">
 							<p class="hero__text hero__text-alone">
-								Стройте работу в команде, управляйте продажами и компаниейс помощью одной из самых
+								Стройте работу в команде, управляйте продажами и компанией с помощью одной из самых
 								популярных CRM-систем. Помогаем выбрать версию, настроить интеграцию с внешними
 								сервисамии автоматизировать бизнес-процессы.
 							</p>
@@ -215,11 +246,33 @@
 					<img
 						loading="lazy"
 						src="./img/slide-image-3.svg"
-						class="image hero__image-slide-3"
+						class="image hero__image hero__image-slide-3"
 						width="406"
 						height="400"
 						alt="Изображние слайда"
 					/>
+					<div class="hero__container-navigation">
+						<button class="btn-reset hero__button-prev">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-arrow"
+								width="14"
+								height="25"
+								alt="Стрелка назад"
+							/>
+						</button>
+						<button class="btn-reset hero__button-next">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-next"
+								width="14"
+								height="25"
+								alt="Стрелка вперед"
+							/>
+						</button>
+					</div>
 				</div>
 				<div class="swiper-slide hero__slide hero__slide-fourth">
 					<div class="hero__container-side">
@@ -235,39 +288,47 @@
 					<img
 						loading="lazy"
 						src="./img/slide-image-4.svg"
-						class="image hero__image-slide-4"
+						class="image hero__image hero__image-slide-4"
 						width="432"
 						height="400"
 						alt="Изображние слайда"
 					/>
+					<div class="hero__container-navigation">
+						<button class="btn-reset hero__button-prev">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-arrow"
+								width="14"
+								height="25"
+								alt="Стрелка назад"
+							/>
+						</button>
+						<button class="btn-reset hero__button-next">
+							<img
+								loading="lazy"
+								src="./img/prev-arrow.svg"
+								class="image hero__icon-next"
+								width="14"
+								height="25"
+								alt="Стрелка вперед"
+							/>
+						</button>
+					</div>
 				</div>
-			</div>
-			<div class="hero__container-navigation">
-				<button class="btn-reset hero__button-prev">
-					<img
-						loading="lazy"
-						src="./img/prev-arrow.svg"
-						class="image hero__icon-arrow"
-						width="14"
-						height="25"
-						alt="Стрелка назад"
-					/>
-				</button>
-				<button class="btn-reset hero__button-next">
-					<img
-						loading="lazy"
-						src="./img/prev-arrow.svg"
-						class="image hero__icon-next"
-						width="14"
-						height="25"
-						alt="Стрелка вперед"
-					/>
-				</button>
 			</div>
 		</div>
 	</div>
 </section>
-</main>
+ <section class="service">
+	<div class="container service__container">
+		<ul class="service__list list-reset">
+			<li class="service__item"></li>
+		</ul>
+	</div>
+</section>
+
+			</main>
 		</div>
 	</body>
 </html>

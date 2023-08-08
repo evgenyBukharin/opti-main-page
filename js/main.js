@@ -10501,11 +10501,16 @@ core.use([Navigation, Autoplay]);
 const swiperEl = document.querySelector(".hero__slider");
 const heroSlider = new core(swiperEl, {
   slidesPerView: 1,
-  speed: 600,
+  speed: 700,
   spaceBetween: 30,
+  grabCursor: true,
   navigation: {
     prevEl: ".hero__button-prev",
     nextEl: ".hero__button-next"
+  },
+  autoplay: {
+    delay: 5000,
+    pauseOnMouseEnter: true
   }
 });
 ;// CONCATENATED MODULE: ./src/js/_components.js

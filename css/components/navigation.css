@@ -1,9 +1,9 @@
-.service {
+.navigation {
   background: var(--grey-color);
   padding-top: 12px;
   padding-bottom: 12px
 }
-.service__list {
+.navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,7 +15,7 @@
   align-items: center;
   gap: 12px
 }
-.service__item {
+.navigation__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@
   -ms-flex-align: center;
   align-items: center
 }
-.service__link {
+.navigation__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,10 +32,16 @@
   align-items: center;
   text-decoration: none
 }
-.service__text {
+.navigation__text {
   color: var(--white-color);
-  font-size: 14px
+  font-size: 14px;
+  text-align: center
 }
-.service__icon {
+.navigation__icon {
   margin-right: 9px
+}
+@media (max-width:768px) {
+  .navigation {
+    display: none
+  }
 }
