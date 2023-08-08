@@ -111,17 +111,30 @@
 		border-radius: 8px;
 		margin-bottom: 100px;
 		text-decoration: none;
+		transition: background 0.4s ease, color 0.4s ease;
 		&-primary {
 			background: var(--title-color);
+			&:hover {
+				background: var(--service-title-color);
+			}
 		}
 		&-secondary {
 			background: var(--secondary-button-color);
+			&:hover {
+				background: var(--blue-color);
+			}
 		}
 		&-thirdly {
 			background: var(--thirdly-button-color);
+			&:hover {
+				background: var(--service-title-color);
+			}
 		}
 		&-fourthly {
 			background: var(--dark-blue-color);
+			&:hover {
+				background: var(--service-title-color);
+			}
 		}
 		&-next {
 			margin-left: 40px;

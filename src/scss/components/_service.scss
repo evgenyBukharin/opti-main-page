@@ -1,6 +1,6 @@
 .service {
 	padding-top: 27px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	&__container {
 		&-text {
 			display: flex;
@@ -114,6 +114,23 @@
 		font-size: 8px;
 		line-height: normal;
 		text-decoration: none;
+		position: relative;
+		width: fit-content;
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			width: 0;
+			height: 1px;
+			background: var(--service-title-color);
+			transition: width 0.4s ease;
+		}
 		&-main {
 			margin-bottom: 10px;
 		}
@@ -130,6 +147,13 @@
 		max-width: 138px;
 		text-align: center;
 		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: background 0.4s ease;
+		&:hover {
+			background: var(--service-title-color);
+		}
 	}
 }
 

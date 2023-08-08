@@ -34,6 +34,10 @@
 			font-size: 14px;
 			font-weight: 500;
 			min-height: 35px;
+			transition: background 0.4s ease;
+			&:hover {
+				background: var(--service-title-color);
+			}
 		}
 		&-icon {
 			min-height: 35px;
@@ -103,6 +107,8 @@
 	.header {
 		&__burger {
 			display: inline-block;
+			position: relative;
+			z-index: 1000;
 		}
 		&__button {
 			&-icon {
