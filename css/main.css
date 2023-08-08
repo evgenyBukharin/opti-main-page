@@ -436,7 +436,8 @@ p {
   font-weight: 600;
   line-height: 18px;
   border-radius: 8px;
-  margin-bottom: 100px
+  margin-bottom: 100px;
+  text-decoration: none
 }
 .hero__button-primary {
   background: var(--title-color)
@@ -769,7 +770,8 @@ p {
 .service__text {
   color: var(--real-black-color);
   font-size: 8px;
-  line-height: normal
+  line-height: normal;
+  text-decoration: none
 }
 .service__text-main {
   margin-bottom: 10px
@@ -784,7 +786,8 @@ p {
   line-height: normal;
   width: 100%;
   max-width: 138px;
-  text-align: center
+  text-align: center;
+  text-decoration: none
 }
 @media (max-width:1300px) {
   .service__item-main {
