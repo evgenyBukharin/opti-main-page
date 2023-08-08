@@ -1,4 +1,398 @@
 .service {
+	padding-top: 27px;
+	padding-bottom: 50px;
 	&__container {
+		&-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			&-icon {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				gap: 12px;
+			}
+		}
+		&-double {
+			grid-column: 2 span;
+			display: flex;
+			flex-direction: column;
+			row-gap: 28px;
+		}
+		&-triple {
+			grid-column: 2 span;
+			display: flex;
+			flex-direction: column;
+			row-gap: 28px;
+			&-reverse {
+				grid-column: 5 span;
+				display: flex;
+				column-gap: 22px;
+				row-gap: 28px;
+				flex-wrap: wrap;
+			}
+		}
+		&-item-button {
+			display: flex;
+			justify-content: space-between;
+			gap: 24px;
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		column-gap: 22px;
+		row-gap: 28px;
+	}
+	&__item {
+		padding: 20px 7px 13px 20px;
+		border-radius: 10px;
+		background: crimson;
+		// background: var(--item-bg-color);
+		box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.05);
+		&-main {
+			grid-column: 3 span;
+			height: fit-content;
+		}
+		&-double {
+			padding-top: 15px;
+			max-height: 70px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&:last-child {
+				padding-bottom: 8px;
+			}
+		}
+		&-triple {
+			display: flex;
+			align-items: center;
+			gap: 7px;
+			&:first-child {
+				max-height: 40px;
+				padding-top: 4px;
+				padding-bottom: 2px;
+			}
+			&:last-child {
+				padding-top: 9px;
+				padding-bottom: 11px;
+				padding-right: 12px;
+				padding-left: 20px;
+				align-items: flex-start;
+			}
+			&-reverse {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				gap: 12px;
+				padding-top: 7px;
+				padding-right: 14px;
+				padding-bottom: 8px;
+				padding-left: 15px;
+				max-height: 100px;
+				&-smaller {
+					display: flex;
+					align-items: center;
+					max-width: 325px;
+				}
+			}
+		}
+	}
+	&__title {
+		color: var(--service-title-color);
+		font-size: 13px;
+		font-weight: 600;
+		line-height: normal;
+		&-main {
+			margin-bottom: 23px;
+		}
+		&-reverse {
+			margin-top: 8px;
+		}
+	}
+	&__text {
+		color: var(--real-black-color);
+		font-size: 8px;
+		line-height: normal;
+		&-main {
+			margin-bottom: 10px;
+		}
+	}
+	&__button {
+		padding: 12px 20px;
+		background: var(--title-color);
+		color: var(--white-color);
+		border-radius: 10px;
+		font-size: 13px;
+		font-weight: 600;
+		line-height: normal;
+		width: 100%;
+		max-width: 138px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 1300px) {
+	.service {
+		&__item {
+			&-main {
+				grid-column: 5 span;
+			}
+			&-triple-reverse {
+				max-width: 600px;
+				&-smaller {
+					order: 1;
+					max-width: 340px;
+				}
+				&-first {
+					order: 2;
+				}
+			}
+		}
+		&__container {
+			&-double {
+				grid-column: 4 span;
+			}
+			&-triple {
+				grid-column: 3 span;
+				&-reverse {
+					grid-column: 12 span;
+					grid-row: 2;
+					flex-wrap: nowrap;
+				}
+			}
+		}
+		&__button {
+			order: 3;
+			max-width: 210px;
+		}
+		&__title {
+			&-ip {
+				max-width: 146px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.service {
+		&__item {
+			&-triple-reverse {
+				max-width: 550px;
+				&-smaller {
+					max-width: 210px;
+					flex-direction: column;
+					padding: 15px;
+					padding-left: 20px;
+				}
+			}
+		}
+		&__button {
+			max-width: 120px;
+		}
+		&__title {
+			&-ip {
+				margin-right: auto;
+			}
+		}
+		&__icon {
+			&-recording {
+				width: 72px;
+				height: 26px;
+				transform: scale(1.25);
+				margin-left: auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 835px) {
+	.service {
+		&__item {
+			&-triple {
+				padding-left: 12px;
+				&:last-child {
+					padding-left: 12px;
+				}
+			}
+		}
+		&__icon {
+			&-CRM {
+				margin-left: -16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.service {
+		&__list {
+			gap: 22px;
+		}
+		&__item {
+			&-main {
+				grid-column: 12 span;
+			}
+			&-triple {
+				&-reverse {
+					&-first {
+						order: 0;
+						max-width: unset;
+						grid-column: 12 span;
+					}
+					&-smaller {
+						grid-column: 8 span;
+						max-width: unset;
+					}
+				}
+			}
+		}
+		&__container {
+			&-double {
+				grid-column: 7 span;
+			}
+			&-triple {
+				grid-column: 5 span;
+				&-reverse {
+					grid-row: 3;
+					display: grid;
+					grid-template-columns: repeat(12, 1fr);
+				}
+			}
+		}
+		&__icon {
+			&-recording {
+				transform: scale(1);
+			}
+		}
+		&__button {
+			grid-column: 4 span;
+			max-width: unset;
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.service {
+		&__container {
+			&-triple {
+				row-gap: 25px;
+			}
+		}
+		&__icon {
+			&-CRM {
+				width: 61px;
+				height: 67px;
+				margin-left: auto;
+				margin-top: -20px;
+			}
+			&-learning {
+				margin-left: auto;
+			}
+			&-seo {
+				margin-left: auto;
+				margin-top: -12px;
+			}
+			&-audit {
+				margin-left: auto;
+				width: 72px;
+				height: 47px;
+			}
+		}
+		&__item {
+			&-double {
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 15px;
+				max-height: unset;
+				&:first-child {
+					padding-right: 9px;
+					padding-bottom: 11px;
+					padding-bottom: 5px;
+				}
+				&:last-child {
+					padding-right: 16px;
+					padding-bottom: 5px;
+				}
+			}
+			&-triple {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0;
+				padding: 15px;
+				padding-left: 8px;
+				padding-bottom: 2px;
+				&:first-child {
+					max-height: 80px;
+					row-gap: 7px;
+					padding-top: 15px;
+					padding-left: 15px;
+					padding-right: 7px;
+					padding-bottom: 8px;
+				}
+				&:last-child {
+					padding-top: 15px;
+					padding-left: 15px;
+				}
+			}
+		}
+		&__title {
+			&-audit {
+				max-width: 109px;
+			}
+			&-CRM {
+				max-width: 69px;
+			}
+		}
+		&__text {
+			&-main {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.service {
+		&__icon {
+			&-CRM {
+				width: 61px;
+				height: 67px;
+				margin-left: auto;
+				margin-top: -20px;
+			}
+		}
+		&__item {
+			&-triple {
+				&:last-child {
+					flex-direction: column;
+					gap: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 392px) {
+	.service {
+		&__icon {
+			&-marketing {
+				width: 155px;
+				height: 54px;
+			}
+		}
+		&__container {
+			&-text {
+				min-height: 74px;
+			}
+		}
+		&__item {
+			&-triple {
+				&-reverse {
+					min-height: 74px;
+					align-items: center;
+				}
+			}
+		}
 	}
 }
