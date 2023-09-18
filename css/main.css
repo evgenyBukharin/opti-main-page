@@ -731,6 +731,8 @@ p {
 	background: var(--item-bg-color);
 	-webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.05);
+	display: block;
+	text-decoration: none;
 }
 .service__item-main {
 	-ms-grid-column-span: 3;
@@ -847,6 +849,9 @@ p {
 }
 .service__button:hover {
 	background: var(--service-title-color);
+}
+.service__link {
+	text-decoration: none;
 }
 @media (max-width: 1300px) {
 	.service__item-main {
